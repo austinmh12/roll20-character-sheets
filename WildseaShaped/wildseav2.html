@@ -398,80 +398,116 @@
 				<h2 data-i18n="languages">LANGUAGES</h2>
 			</div>
 			<div class="languages1">
-				<span class="standard_text" data-i18n="low-sour">Low Sour</span>	
+				<button type="roll" class="standard_text" name="roll_low_sour" value="/r [[(@{low_sour}[Low Sour] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="low-sour">Low Sour</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_low_sour1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_low_sour2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_low_sour3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_low_sour" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="chthonic">Chthonic</span>	
+				<button type="roll" class="standard_text" name="roll_chthonic" value="/r [[(@{chthonic}[Chthonic] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="chthonic">Chthonic</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_chthonic1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_chthonic2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_chthonic3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_chthonic" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="saprekk">Saprekk</span>	
+				<button type="roll" class="standard_text" name="roll_saprekk" value="/r [[(@{saprekk}[Saprekk] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="saprekk">Saprekk</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_saprekk1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_saprekk2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_saprekk3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_saprekk" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="gaudimm">Gaudimm</span>	
+				<button type="roll" class="standard_text" name="roll_gaudimm" value="/r [[(@{gaudimm}[Gaudimm] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="gaudimm">Gaudimm</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_gaudimm1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_gaudimm2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_gaudimm3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_gaudimm" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="knock">Knock</span>	
+				<button type="roll" class="standard_text" name="roll_knock" value="/r [[(@{knock}[Knock] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="knock">Knock</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_knock1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_knock2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_knock3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_knock" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="brasstongue">Brasstongue</span>	
+				<button type="roll" class="standard_text" name="roll_brasstongue" value="/r [[(@{brasstongue}[Brasstongue] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="brasstongue">Brasstongue</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_brasstongue1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_brasstongue2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_brasstongue3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_brasstongue" value="0" min="0" max="3">
 				</div>
 			</div>
 			<div class="languages2">
-				<span class="standard_text" data-i18n="raka-spit">Raka Spit</span>	
+				<button type="roll" class="standard_text" name="roll_raka_spit" value="/r [[(@{raka_spit}[Raka Spit] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="raka-spit">Raka Spit</span>
+				</button>
 				<div>
 					<input type="checkbox" name="attr_raka_spit1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_raka_spit2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_raka_spit3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_raka_spit" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="lyre-bite">Lyre-Bite</span>	
+				<button type="roll" class="standard_text" name="roll_lyre_bite" value="/r [[(@{lyre_bite}[Lyre-Bite] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="lyre-bite">Lyre-Bite</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_lyre_bite1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_lyre_bite2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_lyre_bite3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_lyre_bite" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="old-hand">Old Hand</span>	
+				<button type="roll" class="standard_text" name="roll_old_hand" value="/r [[(@{old_hand}[Old Hand] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="old-hand">Old Hand</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_old_hand1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_old_hand2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_old_hand3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_old_hand" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="signalling">Signalling</span>	
+				<button type="roll" class="standard_text" name="roll_lsignalling" value="/r [[(@{lsignalling}[Signalling] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="signalling">Signalling</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_signalling1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_signalling2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_signalling3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_signalling" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text" data-i18n="highvin">Highvin</span>	
+				<button type="roll" class="standard_text" name="roll_highvin" value="/r [[(@{highvin}[Highvin] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<span class="standard_text" data-i18n="highvin">Highvin</span>	
+				</button>
 				<div>
 					<input type="checkbox" name="attr_highvin1"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_highvin2"><span class="double_circle"><span></span></span>
 					<input type="checkbox" name="attr_highvin3"><span class="double_circle"><span></span></span>
+					<input type="hidden" name="attr_highvin" value="0" min="0" max="3">
 				</div>
-				<span class="standard_text"></span>	
-				<div>
-					<input type="checkbox"><span class="double_circle"><span></span></span>
-					<input type="checkbox"><span class="double_circle"><span></span></span>
-					<input type="checkbox"><span class="double_circle"><span></span></span>
-				</div>
+				<fieldset class="repeating_lang">
+					<input type="text" class="standard_text" name="attr_lang">	
+					<div>
+						<input type="checkbox" name="attr_langRating1"><span class="double_circle"><span></span></span>
+						<input type="checkbox" name="attr_langRating2"><span class="double_circle"><span></span></span>
+						<input type="checkbox" name="attr_langRating3"><span class="double_circle"><span></span></span>
+						<input type="hidden" name="attr_langRating" value="0" min="0" max="3">
+					</div>
+				</fieldset>
 			</div>
 		</div>
 		<div class="resources">
