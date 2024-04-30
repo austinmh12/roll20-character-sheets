@@ -503,15 +503,12 @@
 					<input type="checkbox" name="attr_highvin3"><span class="double_circle"><span></span></span>
 					<input type="hidden" name="attr_highvin" value="0" min="0" max="3">
 				</div>
-				<fieldset class="repeating_lang">
-					<input type="text" class="standard_text" name="attr_lang">	
-					<div>
-						<input type="checkbox" name="attr_langRating1"><span class="double_circle"><span></span></span>
-						<input type="checkbox" name="attr_langRating2"><span class="double_circle"><span></span></span>
-						<input type="checkbox" name="attr_langRating3"><span class="double_circle"><span></span></span>
-						<input type="hidden" name="attr_langRating" value="0" min="0" max="3">
-					</div>
-				</fieldset>
+				<span class="standard_text"></span>
+				<div>
+					<input type="checkbox"><span class="double_circle"><span></span></span>
+					<input type="checkbox"><span class="double_circle"><span></span></span>
+					<input type="checkbox"><span class="double_circle"><span></span></span>
+				</div>
 			</div>
 		</div>
 		<div class="resources">
@@ -523,8 +520,10 @@
 					<h3 data-i18n="salvage">SALVAGE</h3>
 				</div>
 				<fieldset class="repeating_salvage">
-					<input type="text" spellcheck="false" name="attr_salvageName" class="standard_text" placeholder="Salvage Name">
-					<input type="text" spellcheck="false" name="attr_salvageTags" class="standard_text" placeholder="Tags">
+					<div class="resource_container">
+						<input type="text" spellcheck="false" name="attr_salvageName" class="standard_text" placeholder="Salvage Name">
+						<input type="text" spellcheck="false" name="attr_salvageTags" class="standard_text" placeholder="Tags">
+					</div>
 				</fieldset>
 			</div>
 			<div class="specimens panel-sub-outline">
@@ -532,8 +531,10 @@
 					<h3 data-i18n="specimens">SPECIMENS</h3>
 				</div>
 				<fieldset class="repeating_specimens">
-					<input type="text" spellcheck="false" name="attr_specimenName" class="standard_text" placeholder="Specimen Name">
-					<input type="text" spellcheck="false" name="attr_specimenTags" class="standard_text" placeholder="Tags">
+					<div class="resource_container">
+						<input type="text" spellcheck="false" name="attr_specimenName" class="standard_text" placeholder="Specimen Name">
+						<input type="text" spellcheck="false" name="attr_specimenTags" class="standard_text" placeholder="Tags">
+					</div>
 				</fieldset>
 			</div>
 			<div class="whispers panel-sub-outline">
@@ -541,8 +542,10 @@
 					<h3 data-i18n="whispers">WHISPERS</h3>
 				</div>
 				<fieldset class="repeating_whispers">
-					<input type="text" spellcheck="false" name="attr_whisperName" class="standard_text" placeholder="Whisper Name">
-					<input type="text" spellcheck="false" name="attr_whisperTags" class="standard_text" placeholder="Tags">
+					<div class="resource_container">
+						<input type="text" spellcheck="false" name="attr_whisperName" class="standard_text" placeholder="Whisper Name">
+						<input type="text" spellcheck="false" name="attr_whisperTags" class="standard_text" placeholder="Tags">
+					</div>
 				</fieldset>
 			</div>
 			<div class="charts panel-sub-outline">
@@ -550,8 +553,10 @@
 					<h3 data-i18n="charts">CHARTS</h3>
 				</div>
 				<fieldset class="repeating_charts">
-					<input type="text" spellcheck="false" name="attr_chartName" class="standard_text" placeholder="Chart Name">
-					<input type="text" spellcheck="false" name="attr_chartTags" class="standard_text" placeholder="Tags">
+					<div class="resource_container">
+						<input type="text" spellcheck="false" name="attr_chartName" class="standard_text" placeholder="Chart Name">
+						<input type="text" spellcheck="false" name="attr_chartTags" class="standard_text" placeholder="Tags">
+					</div>
 				</fieldset>
 			</div>
 		</div>
@@ -568,39 +573,49 @@
 						<option value="gear" data-i18n="gear">Gear</option>
 						<option value="companion" data-i18n="companion">Companion</option>
 					</select>
-					<select name="attr_aspect_length" class="aspect_length_select">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-					</select>
+					<div class="aspect_length">
+						<select name="attr_aspect_length" class="aspect_length_select" style="color: white;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+					<input class="div-show-radio div-show-1" name="attr_aspect_length" type="radio" value="1">
+					<input class="div-show-radio div-show-2" name="attr_aspect_length" type="radio" value="2">
+					<input class="div-show-radio div-show-3" name="attr_aspect_length" type="radio" value="3">
+					<input class="div-show-radio div-show-4" name="attr_aspect_length" type="radio" value="4">
+					<input class="div-show-radio div-show-5" name="attr_aspect_length" type="radio" value="5">
+					<input class="div-show-radio div-show-6" name="attr_aspect_length" type="radio" value="6">
+					<input class="div-show-radio div-show-7" name="attr_aspect_length" type="radio" value="7">
+					<input class="div-show-radio div-show-8" name="attr_aspect_length" type="radio" value="8">
 					<div class="aspect_track">
-						<div class="div-show-1">
+						<div class="aspect_track_box aspect_mark_1">
 							<input type="checkbox" name="attr_aspect_track_1" class="aspect_track_1 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-2">
+						<div class="aspect_track_box aspect_mark_2">
 							<input type="checkbox" name="attr_aspect_track_2" class="aspect_track_2 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-3">
+						<div class="aspect_track_box aspect_mark_3">
 							<input type="checkbox" name="attr_aspect_track_3" class="aspect_track_3 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-4">
+						<div class="aspect_track_box aspect_mark_4">
 							<input type="checkbox" name="attr_aspect_track_4" class="aspect_track_4 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-5">
+						<div class="aspect_track_box aspect_mark_5">
 							<input type="checkbox" name="attr_aspect_track_5" class="aspect_track_5 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-6">
+						<div class="aspect_track_box aspect_mark_6">
 							<input type="checkbox" name="attr_aspect_track_6" class="aspect_track_6 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-7">
+						<div class="aspect_track_box aspect_mark_7">
 							<input type="checkbox" name="attr_aspect_track_7" class="aspect_track_7 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-8">
+						<div class="aspect_track_box aspect_mark_8">
 							<input type="checkbox" name="attr_aspect_track_8" class="aspect_track_8 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
 					</div>
@@ -622,7 +637,7 @@
 						<option value="injury" data-i18n="injury">Injury</option>
 						<option value="track" data-i18n="track">Track</option>
 					</select>
-					<select name="attr_temp_aspect_length" class="aspect_length_select">
+					<select name="attr_temp_aspect_length" class="aspect_length_select" style="color: white;">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -632,29 +647,37 @@
 						<option value="7">7</option>
 						<option value="8">8</option>
 					</select>
+					<input class="div-show-radio div-show-1" name="attr_temp_aspect_length" type="radio" value="1">
+					<input class="div-show-radio div-show-2" name="attr_temp_aspect_length" type="radio" value="2">
+					<input class="div-show-radio div-show-3" name="attr_temp_aspect_length" type="radio" value="3">
+					<input class="div-show-radio div-show-4" name="attr_temp_aspect_length" type="radio" value="4">
+					<input class="div-show-radio div-show-5" name="attr_temp_aspect_length" type="radio" value="5">
+					<input class="div-show-radio div-show-6" name="attr_temp_aspect_length" type="radio" value="6">
+					<input class="div-show-radio div-show-7" name="attr_temp_aspect_length" type="radio" value="7">
+					<input class="div-show-radio div-show-8" name="attr_temp_aspect_length" type="radio" value="8">
 					<div class="aspect_track">
-						<div class="div-show-1">
+						<div class="aspect_track_box aspect_mark_1">
 							<input type="checkbox" name="attr_temp_aspect_track_1" class="temp_aspect_track_1 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-2">
+						<div class="aspect_track_box aspect_mark_2">
 							<input type="checkbox" name="attr_temp_aspect_track_2" class="temp_aspect_track_2 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-3">
+						<div class="aspect_track_box aspect_mark_3">
 							<input type="checkbox" name="attr_temp_aspect_track_3" class="temp_aspect_track_3 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-4">
+						<div class="aspect_track_box aspect_mark_4">
 							<input type="checkbox" name="attr_temp_aspect_track_4" class="temp_aspect_track_4 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-5">
+						<div class="aspect_track_box aspect_mark_5">
 							<input type="checkbox" name="attr_temp_aspect_track_5" class="temp_aspect_track_5 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-6">
+						<div class="aspect_track_box aspect_mark_6">
 							<input type="checkbox" name="attr_temp_aspect_track_6" class="temp_aspect_track_6 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-7">
+						<div class="aspect_track_box aspect_mark_7">
 							<input type="checkbox" name="attr_temp_aspect_track_7" class="temp_aspect_track_7 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div class="div-show-8">
+						<div class="aspect_track_box aspect_mark_8">
 							<input type="checkbox" name="attr_temp_aspect_track_8" class="temp_aspect_track_8 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
 					</div>

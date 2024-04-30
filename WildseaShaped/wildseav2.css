@@ -10,7 +10,7 @@ select::-ms-expand {
 .main input,
 .main label,
 .main span {
-	font-size: 11px;
+	font-size: 12px;
 	color: #3d3b26;
 	font-family: "Sofia Sans Condensed", sans-serif;
 	font-optical-sizing: auto;
@@ -19,7 +19,7 @@ select::-ms-expand {
 }
 
 .standard_text {
-	font-size: 11px;
+	font-size: 12px;
 	color: #3d3b26;
 	height: min-content;
 	font-family: "Sofia Sans Condensed", sans-serif;
@@ -432,7 +432,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: major;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "major_title major_title"
+	grid-template-areas: "major_title"
 }
 
 .major_title {
@@ -445,7 +445,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: minor;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "minor_title minor_title"
+	grid-template-areas: "minor_title"
 }
 
 .minor_title {
@@ -458,7 +458,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	display: grid;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "drives_title drives_title";
+	grid-template-areas: "drives_title";
 	margin-bottom: 10px;
 }
 
@@ -670,6 +670,30 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	font-size: 14px;
 }
 
+.languages button[type=roll] {   
+    background-color: transparent;
+    color: black;
+    border: none;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;   
+}
+
+.languages button[type=roll]:focus {
+    outline: none;
+}
+
+.languages button[type=roll]::before {
+    display: none;
+}
+
+.languages button[type=roll]:hover {
+    color: #245486;
+}
+
 .resources {
 	grid-area: resources;
 	display: grid;
@@ -693,7 +717,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: salvage;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "salvage_title salvage_title";
+	grid-template-areas: "salvage_title";
 }
 
 .salvage_title {
@@ -706,7 +730,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: specimens;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "specimens_title specimens_title";
+	grid-template-areas: "specimens_title";
 }
 
 .specimens_title {
@@ -719,7 +743,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: whispers;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "whispers_title whispers_title";
+	grid-template-areas: "whispers_title";
 }
 
 .whispers_title {
@@ -732,12 +756,18 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	grid-area: charts;
 	gap: 0px;
 	grid-auto-rows: max-content;
-	grid-template-areas: "charts_title charts_title";
+	grid-template-areas: "charts_title";
 }
 
 .charts_title {
 	display: grid;
 	grid-area: charts_title;
+}
+
+.resource_container {
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-auto-flow: column;
 }
 
 .aspects {
@@ -762,7 +792,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	display: grid;
 	grid-template:
 		"name_label name_input name_source"
-		"track_blank track_row track_row"
+		"track_length track_row track_row"
 		"details_label details_input details_input";
 	grid-template-columns: 25% 50% 25%;
 	grid-template-rows: 20px 18px 37px;
@@ -817,11 +847,85 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	right: 4px;
 }
 
-.aspect_track_blank {
+.aspect_length {
 	display: grid;
-	grid-area: track_blank;
+	grid-area: track_length;
 	background-color: #858778;
 	color: white;
+}
+
+.aspect_length_select {
+	background-color: #858778;
+	color: white;
+	text-align: center;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.div-show-radio,
+.aspect_track_box {
+	display: none;
+}
+
+.div-show-1:checked ~ .aspect_track .aspect_mark_1 {
+	display: grid;
+}
+
+.div-show-2:checked ~ .aspect_track .aspect_mark_1,
+.div-show-2:checked ~ .aspect_track .aspect_mark_2 {
+	display: grid;
+}
+
+.div-show-3:checked ~ .aspect_track .aspect_mark_1,
+.div-show-3:checked ~ .aspect_track .aspect_mark_2,
+.div-show-3:checked ~ .aspect_track .aspect_mark_3 {
+	display: grid;
+}
+
+.div-show-4:checked ~ .aspect_track .aspect_mark_1,
+.div-show-4:checked ~ .aspect_track .aspect_mark_2,
+.div-show-4:checked ~ .aspect_track .aspect_mark_3,
+.div-show-4:checked ~ .aspect_track .aspect_mark_4 {
+	display: grid;
+}
+
+.div-show-5:checked ~ .aspect_track .aspect_mark_1,
+.div-show-5:checked ~ .aspect_track .aspect_mark_2,
+.div-show-5:checked ~ .aspect_track .aspect_mark_3,
+.div-show-5:checked ~ .aspect_track .aspect_mark_4,
+.div-show-5:checked ~ .aspect_track .aspect_mark_5 {
+	display: grid;
+}
+
+.div-show-6:checked ~ .aspect_track .aspect_mark_1,
+.div-show-6:checked ~ .aspect_track .aspect_mark_2,
+.div-show-6:checked ~ .aspect_track .aspect_mark_3,
+.div-show-6:checked ~ .aspect_track .aspect_mark_4,
+.div-show-6:checked ~ .aspect_track .aspect_mark_5,
+.div-show-6:checked ~ .aspect_track .aspect_mark_6 {
+	display: grid;
+}
+
+.div-show-7:checked ~ .aspect_track .aspect_mark_1,
+.div-show-7:checked ~ .aspect_track .aspect_mark_2,
+.div-show-7:checked ~ .aspect_track .aspect_mark_3,
+.div-show-7:checked ~ .aspect_track .aspect_mark_4,
+.div-show-7:checked ~ .aspect_track .aspect_mark_5,
+.div-show-7:checked ~ .aspect_track .aspect_mark_6,
+.div-show-7:checked ~ .aspect_track .aspect_mark_7 {
+	display: grid;
+}
+
+.div-show-8:checked ~ .aspect_track .aspect_mark_1,
+.div-show-8:checked ~ .aspect_track .aspect_mark_2,
+.div-show-8:checked ~ .aspect_track .aspect_mark_3,
+.div-show-8:checked ~ .aspect_track .aspect_mark_4,
+.div-show-8:checked ~ .aspect_track .aspect_mark_5,
+.div-show-8:checked ~ .aspect_track .aspect_mark_6,
+.div-show-8:checked ~ .aspect_track .aspect_mark_7,
+.div-show-8:checked ~ .aspect_track .aspect_mark_8 {
+	display: grid;
 }
 
 .aspect_details_label {
