@@ -986,30 +986,49 @@
 						<option value="gang" data-i18n="gang">Gang</option>
 						<option value="pack" data-i18n="pack">Pack</option>
 					</select>
-					<div class="aspect_track_blank"></div>
+					<div class="aspect_length">
+						<select name="attr_crew_length" class="aspect_length_select" style="color: white;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+					<input class="div-show-radio div-show-1" name="attr_crew_length" type="radio" value="1">
+					<input class="div-show-radio div-show-2" name="attr_crew_length" type="radio" value="2">
+					<input class="div-show-radio div-show-3" name="attr_crew_length" type="radio" value="3">
+					<input class="div-show-radio div-show-4" name="attr_crew_length" type="radio" value="4">
+					<input class="div-show-radio div-show-5" name="attr_crew_length" type="radio" value="5">
+					<input class="div-show-radio div-show-6" name="attr_crew_length" type="radio" value="6">
+					<input class="div-show-radio div-show-7" name="attr_crew_length" type="radio" value="7">
+					<input class="div-show-radio div-show-8" name="attr_crew_length" type="radio" value="8">
 					<div class="aspect_track">
-						<div>
+						<div class="aspect_track_box aspect_mark_1">
 							<input type="checkbox" name="attr_crew_track_1" class="crew_track_1 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_2">
 							<input type="checkbox" name="attr_crew_track_2" class="crew_track_2 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_3">
 							<input type="checkbox" name="attr_crew_track_3" class="crew_track_3 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_4">
 							<input type="checkbox" name="attr_crew_track_4" class="crew_track_4 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_5">
 							<input type="checkbox" name="attr_crew_track_5" class="crew_track_5 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_6">
 							<input type="checkbox" name="attr_crew_track_6" class="crew_track_6 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_7">
 							<input type="checkbox" name="attr_crew_track_7" class="crew_track_7 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
-						<div>
+						<div class="aspect_track_box aspect_mark_8">
 							<input type="checkbox" name="attr_crew_track_8" class="crew_track_8 burnable" value="1" unchecked=""><span class="double_circle"><span></span></span>
 						</div>
 					</div>
@@ -1026,9 +1045,9 @@
 				<div class="reputation_container">
 					<input spellcheck="false" name="attr_rep_name" type="text" class="standard_text">
 					<div>
-						<input type="checkbox" name="attr_rep_track_1"><span class="double_circle"><span></span></span>
-						<input type="checkbox" name="attr_rep_track_2"><span class="double_circle"><span></span></span>
-						<input type="checkbox" name="attr_rep_track_3"><span class="double_circle"><span></span></span>
+						<input type="checkbox" name="attr_rep_favour"><span class="double_circle"><span></span></span>
+						<input type="checkbox" name="attr_rep_fear"><span class="double_circle"><span></span></span>
+						<input type="checkbox" name="attr_rep_respect"><span class="double_circle"><span></span></span>
 					</div>
 				</div>
 			</fieldset>
