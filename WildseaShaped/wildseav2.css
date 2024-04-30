@@ -10,7 +10,7 @@ select::-ms-expand {
 .main input,
 .main label,
 .main span {
-	font-size: 12px;
+	font-size: 13px;
 	color: #3d3b26;
 	font-family: "Sofia Sans Condensed", sans-serif;
 	font-optical-sizing: auto;
@@ -19,7 +19,7 @@ select::-ms-expand {
 }
 
 .standard_text {
-	font-size: 12px;
+	font-size: 13px;
 	color: #3d3b26;
 	height: min-content;
 	font-family: "Sofia Sans Condensed", sans-serif;
