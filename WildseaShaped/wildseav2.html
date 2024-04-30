@@ -724,121 +724,194 @@
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_armor" value="/r [[((@{crew_armour_length} - @{crew_armour_marks})[Armour] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_armour" value="/r [[((@{armour_length} - @{armour_marks})[Armour] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="armour">ARMOUR</h3>
 					</button>
 				</div>
 				<div class="rating_length">
-					<input type="number" name="attr_crew_armour_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_armour_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_armour_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_armour_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_armour_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_armour_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_armour_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_armour_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_armour_track_1" class="armour_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_armour_track_2" class="armour_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_armour_track_3" class="armour_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_armour_track_4" class="armour_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_armour_track_5" class="armour_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_armour_track_6" class="armour_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_armour_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_armour_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_armour_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_armour_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_armour_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_armour_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_armour_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_armour_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_seals" value="/r [[((@{crew_seals_length} - @{crew_seals_marks})[Seals] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_seals" value="/r [[((@{seals_length} - @{seals_marks})[Seals] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="seals">SEALS</h3>
 					</button>
 				</div>
-
 				<div class="rating_length">
-					<input type="number" name="attr_crew_seals_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_seals_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_seals_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_seals_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_seals_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_seals_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_seals_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_seals_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_seals_track_1" class="seals_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_seals_track_2" class="seals_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_seals_track_3" class="seals_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_seals_track_4" class="seals_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_seals_track_5" class="seals_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_seals_track_6" class="seals_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_seals_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_seals_track_1" class="seals_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_seals_track_2" class="seals_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_seals_track_3" class="seals_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_seals_track_4" class="seals_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_seals_track_5" class="seals_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_seals_track_6" class="seals_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_seals_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_speed" value="/r [[((@{crew_speed_length} - @{crew_speed_marks})[Speed] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_speed" value="/r [[((@{speed_length} - @{speed_marks})[Speed] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="speed">SPEED</h3>
 					</button>
 				</div>
-
 				<div class="rating_length">
-					<input type="number" name="attr_crew_speed_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_speed_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_speed_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_speed_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_speed_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_speed_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_speed_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_speed_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_speed_track_1" class="speed_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_speed_track_2" class="speed_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_speed_track_3" class="speed_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_speed_track_4" class="speed_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_speed_track_5" class="speed_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_speed_track_6" class="speed_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_speed_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_speed_track_1" class="speed_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_speed_track_2" class="speed_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_speed_track_3" class="speed_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_speed_track_4" class="speed_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_speed_track_5" class="speed_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_speed_track_6" class="speed_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_speed_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_saws" value="/r [[((@{crew_saws_length} - @{crew_saws_marks})[Saws] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_saws" value="/r [[((@{saws_length} - @{saws_marks})[Saws] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="saws">SAWS</h3>
 					</button>
 				</div>
-
 				<div class="rating_length">
-					<input type="number" name="attr_crew_saws_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_saws_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_saws_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_saws_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_saws_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_saws_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_saws_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_saws_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_saws_track_1" class="saws_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_saws_track_2" class="saws_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_saws_track_3" class="saws_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_saws_track_4" class="saws_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_saws_track_5" class="saws_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_saws_track_6" class="saws_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_saws_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_saws_track_1" class="saws_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_saws_track_2" class="saws_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_saws_track_3" class="saws_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_saws_track_4" class="saws_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_saws_track_5" class="saws_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_saws_track_6" class="saws_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_saws_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_stealth" value="/r [[((@{crew_stealth_length} - @{crew_stealth_marks})[Stealth] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_stealth" value="/r [[((@{stealth_length} - @{stealth_marks})[Stealth] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="stealth">STEALTH</h3>
 					</button>
 				</div>
-
 				<div class="rating_length">
-					<input type="number" name="attr_crew_stealth_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_stealth_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_stealth_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_stealth_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_stealth_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_stealth_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_stealth_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_stealth_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_stealth_track_1" class="stealth_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_stealth_track_2" class="stealth_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_stealth_track_3" class="stealth_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_stealth_track_4" class="stealth_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_stealth_track_5" class="stealth_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_stealth_track_6" class="stealth_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_stealth_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_stealth_track_1" class="stealth_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_stealth_track_2" class="stealth_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_stealth_track_3" class="stealth_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_stealth_track_4" class="stealth_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_stealth_track_5" class="stealth_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_stealth_track_6" class="stealth_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_stealth_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<button type="roll" class="standard_text" name="roll_crew_tilt" value="/r [[((@{crew_tilt_length} - @{crew_tilt_marks})[Tilt] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+					<button type="roll" class="standard_text" name="roll_tilt" value="/r [[((@{tilt_length} - @{tilt_marks})[Tilt] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
 						<h3 data-i18n="tilt">TILT</h3>
 					</button>
 				</div>
-
 				<div class="rating_length">
-					<input type="number" name="attr_crew_tilt_length" value="0" min="0" max="0" placeholder="0">
+					<select name="attr_tilt_length" class="rating_length_select" style="color: white;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
 				</div>
+				<input class="div-show-radio div-show-1" name="attr_tilt_length" type="radio" value="1">
+				<input class="div-show-radio div-show-2" name="attr_tilt_length" type="radio" value="2">
+				<input class="div-show-radio div-show-3" name="attr_tilt_length" type="radio" value="3">
+				<input class="div-show-radio div-show-4" name="attr_tilt_length" type="radio" value="4">
+				<input class="div-show-radio div-show-5" name="attr_tilt_length" type="radio" value="5">
+				<input class="div-show-radio div-show-6" name="attr_tilt_length" type="radio" value="6">
 				<div class="rating_track">
-					<div><input type="checkbox" name="attr_tilt_track_1" class="tilt_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_tilt_track_2" class="tilt_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_tilt_track_3" class="tilt_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_tilt_track_4" class="tilt_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_tilt_track_5" class="tilt_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<div><input type="checkbox" name="attr_tilt_track_6" class="tilt_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
-					<input type="hidden" name="attr_crew_tilt_marks" value="0" min="0" max="6">
+					<div class="rating_track_box rating_mark_1"><input type="checkbox" name="attr_tilt_track_1" class="tilt_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_2"><input type="checkbox" name="attr_tilt_track_2" class="tilt_track_2" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_3"><input type="checkbox" name="attr_tilt_track_3" class="tilt_track_3" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_4"><input type="checkbox" name="attr_tilt_track_4" class="tilt_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_5"><input type="checkbox" name="attr_tilt_track_5" class="tilt_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<div class="rating_track_box rating_mark_6"><input type="checkbox" name="attr_tilt_track_6" class="tilt_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_tilt_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 		</div>

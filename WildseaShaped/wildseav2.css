@@ -1070,7 +1070,7 @@ This is split into 8 columns and 29 rows to get the sizings correct
 	display: grid;
 	height: min-content;
 	gap: 0;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 27% 15% 56%;
 	grid-template-rows: min-content;
 	justify-items: left;
 	align-items: center;
@@ -1100,6 +1100,89 @@ This is split into 8 columns and 29 rows to get the sizings correct
 	display: grid;
 	grid-template-columns: repeat(6, 18%);
 	width: 100%;
+}
+
+.rating_length {
+	display: grid;
+	background-color: #636052;
+	color: white;
+	width: 70%;
+}
+
+.rating_length_select {
+	background-color: #636052;
+	color: white;
+	text-align: center;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.rating_container button[type=roll] {   
+    background-color: transparent;
+    color: black;
+    border: none;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;   
+}
+
+.rating_container button[type=roll]:focus {
+    outline: none;
+}
+
+.rating_container button[type=roll]::before {
+    display: none;
+}
+
+.rating_container button[type=roll]:hover {
+    color: #245486;
+}
+
+.rating_track_box {
+	display: none;
+}
+
+.div-show-1:checked ~ .rating_track .rating_mark_1 {
+	display: grid;
+}
+
+.div-show-2:checked ~ .rating_track .rating_mark_1,
+.div-show-2:checked ~ .rating_track .rating_mark_2 {
+	display: grid;
+}
+
+.div-show-3:checked ~ .rating_track .rating_mark_1,
+.div-show-3:checked ~ .rating_track .rating_mark_2,
+.div-show-3:checked ~ .rating_track .rating_mark_3 {
+	display: grid;
+}
+
+.div-show-4:checked ~ .rating_track .rating_mark_1,
+.div-show-4:checked ~ .rating_track .rating_mark_2,
+.div-show-4:checked ~ .rating_track .rating_mark_3,
+.div-show-4:checked ~ .rating_track .rating_mark_4 {
+	display: grid;
+}
+
+.div-show-5:checked ~ .rating_track .rating_mark_1,
+.div-show-5:checked ~ .rating_track .rating_mark_2,
+.div-show-5:checked ~ .rating_track .rating_mark_3,
+.div-show-5:checked ~ .rating_track .rating_mark_4,
+.div-show-5:checked ~ .rating_track .rating_mark_5 {
+	display: grid;
+}
+
+.div-show-6:checked ~ .rating_track .rating_mark_1,
+.div-show-6:checked ~ .rating_track .rating_mark_2,
+.div-show-6:checked ~ .rating_track .rating_mark_3,
+.div-show-6:checked ~ .rating_track .rating_mark_4,
+.div-show-6:checked ~ .rating_track .rating_mark_5,
+.div-show-6:checked ~ .rating_track .rating_mark_6 {
+	display: grid;
 }
 
 .design_panel {
