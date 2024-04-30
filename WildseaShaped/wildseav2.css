@@ -788,14 +788,14 @@ div.spaced input[type="checkbox"] + span.double_circle {
 }
 
 .aspect_container {
-	height: 75px;
+	height: 100%;
 	display: grid;
 	grid-template:
 		"name_label name_input name_source"
 		"track_length track_row track_row"
 		"details_label details_input details_input";
 	grid-template-columns: 25% 50% 25%;
-	grid-template-rows: 20px 18px 37px;
+	grid-template-rows: 20px 18px;
 	max-width: 100%;
 	max-height: 100%;
 	border: 1px solid #858778;
@@ -940,6 +940,50 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	font-style: normal;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.aspect_details_container {
+	display: grid;
+	grid-area: details_input;
+	min-height: min-content;
+}
+
+.auto-expand {
+	position: relative;
+	cursor: text;
+	word-wrap: break-word;
+	min-height: 37px;
+}
+
+.auto-expand span {
+	visibility: hidden;
+	white-space: pre-wrap;
+	display: block;
+	font: inherit;
+}
+
+.auto-expand textarea {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	resize: none;
+	height: 100%;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	/* letter-spacing: inherit; */
+	padding: inherit;
+	text-align: inherit;
+	text-transform: inherit;
 }
 
 .aspect_details_input {
