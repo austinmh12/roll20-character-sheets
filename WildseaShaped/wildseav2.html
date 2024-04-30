@@ -701,7 +701,12 @@
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="armour">ARMOUR</h3>
+					<button type="roll" class="standard_text" name="roll_crew_armor" value="/r [[((@{crew_armour_length} - @{crew_armour_marks})[Armour] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="armour">ARMOUR</h3>
+					</button>
+				</div>
+				<div class="rating_length">
+					<input type="number" name="attr_crew_armour_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_armour_track_1" class="armour_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -710,11 +715,18 @@
 					<div><input type="checkbox" name="attr_armour_track_4" class="armour_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_armour_track_5" class="armour_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_armour_track_6" class="armour_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_armour_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="seals">SEALS</h3>
+					<button type="roll" class="standard_text" name="roll_crew_seals" value="/r [[((@{crew_seals_length} - @{crew_seals_marks})[Seals] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="seals">SEALS</h3>
+					</button>
+				</div>
+
+				<div class="rating_length">
+					<input type="number" name="attr_crew_seals_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_seals_track_1" class="seals_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -723,11 +735,18 @@
 					<div><input type="checkbox" name="attr_seals_track_4" class="seals_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_seals_track_5" class="seals_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_seals_track_6" class="seals_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_seals_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="speed">SPEED</h3>
+					<button type="roll" class="standard_text" name="roll_crew_speed" value="/r [[((@{crew_speed_length} - @{crew_speed_marks})[Speed] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="speed">SPEED</h3>
+					</button>
+				</div>
+
+				<div class="rating_length">
+					<input type="number" name="attr_crew_speed_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_speed_track_1" class="speed_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -736,11 +755,18 @@
 					<div><input type="checkbox" name="attr_speed_track_4" class="speed_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_speed_track_5" class="speed_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_speed_track_6" class="speed_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_speed_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="saws">SAWS</h3>
+					<button type="roll" class="standard_text" name="roll_crew_saws" value="/r [[((@{crew_saws_length} - @{crew_saws_marks})[Saws] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="saws">SAWS</h3>
+					</button>
+				</div>
+
+				<div class="rating_length">
+					<input type="number" name="attr_crew_saws_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_saws_track_1" class="saws_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -749,11 +775,18 @@
 					<div><input type="checkbox" name="attr_saws_track_4" class="saws_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_saws_track_5" class="saws_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_saws_track_6" class="saws_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_saws_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="stealth">STEALTH</h3>
+					<button type="roll" class="standard_text" name="roll_crew_stealth" value="/r [[((@{crew_stealth_length} - @{crew_stealth_marks})[Stealth] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="stealth">STEALTH</h3>
+					</button>
+				</div>
+
+				<div class="rating_length">
+					<input type="number" name="attr_crew_stealth_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_stealth_track_1" class="stealth_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -762,11 +795,18 @@
 					<div><input type="checkbox" name="attr_stealth_track_4" class="stealth_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_stealth_track_5" class="stealth_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_stealth_track_6" class="stealth_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_stealth_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 			<div class="rating_container">
 				<div class="rating_name">
-					<h3 data-i18n="tilt">TILT</h3>
+					<button type="roll" class="standard_text" name="roll_crew_tilt" value="/r [[((@{crew_tilt_length} - @{crew_tilt_marks})[Tilt] + ?{Edge Bonus|No, 0|Yes, 1}[Edge] + ?{Advantage (D)|0|1|2}[Adv])]]d6dh?{Cut?|0}">
+						<h3 data-i18n="tilt">TILT</h3>
+					</button>
+				</div>
+
+				<div class="rating_length">
+					<input type="number" name="attr_crew_tilt_length" value="0" min="0" max="0" placeholder="0">
 				</div>
 				<div class="rating_track">
 					<div><input type="checkbox" name="attr_tilt_track_1" class="tilt_track_1" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
@@ -775,6 +815,7 @@
 					<div><input type="checkbox" name="attr_tilt_track_4" class="tilt_track_4" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_tilt_track_5" class="tilt_track_5" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
 					<div><input type="checkbox" name="attr_tilt_track_6" class="tilt_track_6" value="1" unchecked=""><span class="double_circle"><span></span></span></div>
+					<input type="hidden" name="attr_crew_tilt_marks" value="0" min="0" max="6">
 				</div>
 			</div>
 		</div>
