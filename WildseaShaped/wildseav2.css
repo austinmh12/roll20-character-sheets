@@ -26,6 +26,7 @@ select::-ms-expand {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+	padding-left: 1px;
 }
 
 .sheet-title {
@@ -243,7 +244,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 .panel-outline {
 	border: 1px solid #3d3b26;
 	border-top: none;
-	border-top-left-radius: 50% 17%;
+	border-top-left-radius: 50% 11%;
 	border-top-right-radius: 30px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -252,7 +253,7 @@ div.spaced input[type="checkbox"] + span.double_circle {
 .panel-sub-outline {
 	border: 1px solid #636052;
 	border-top: none;
-	border-top-left-radius: 50% 17%;
+	border-top-left-radius: 50% 11%;
 	border-top-right-radius: 30px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -1301,4 +1302,5 @@ This is split into 8 columns and 29 rows to get the sizings correct
 	display: grid;
 	grid-area: 20 / 5 / 30 / 9;
 	margin-bottom: 10px;
+	align-content: start;
 }
