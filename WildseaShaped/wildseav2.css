@@ -1001,6 +1001,36 @@ div.spaced input[type="checkbox"] + span.double_circle {
 	text-wrap: wrap;
 }
 
+.aspect_container button[type=roll] {   
+    background-color: #858778;
+    color: black;
+    border: none;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	width: 92%;
+	border-radius: 0;
+	align-self: start;
+	align-content: center;
+	justify-content: center;
+	justify-self: center;
+}
+
+.aspect_container button[type=roll]:focus {
+    outline: none;
+}
+
+.aspect_container button[type=roll]::before {
+    display: none;
+}
+
+.aspect_container button[type=roll]:hover {
+    color: #245486;
+}
+
 .temp_aspects {
 	display: grid;
 	grid-area: temp_aspects;
@@ -1303,4 +1333,59 @@ This is split into 8 columns and 29 rows to get the sizings correct
 	grid-area: 20 / 5 / 30 / 9;
 	margin-bottom: 10px;
 	align-content: start;
+}
+
+/* MARK: Roll Templates
+*/
+.sheet-rolltemplate-aspect {
+	display: grid;
+	grid-template-areas:
+		"aspect_name aspect_name aspect_name aspect_length"
+		"aspect_details aspect_details aspect_details aspect_details";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: min-content;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #858778;
+}
+
+.sheet-rolltemplate-aspect .sheet-template-aspect-name {
+	display: grid;
+	grid-area: aspect_name;
+	font-family: "Sofia Sans Condensed", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #858778;
+	color: white;
+	padding: 2px;
+}
+
+.sheet-rolltemplate-aspect .sheet-template-aspect-track-length {
+	display: grid;
+	grid-area: aspect_length;
+	font-family: "Sofia Sans Condensed", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 18px;
+	background-color: #858778;
+	color: white;
+	justify-content: center;
+	align-content: end;
+	text-align: right;
+	padding: 2px;
+}
+
+.sheet-rolltemplate-aspect .sheet-template-aspect-details {
+	display: grid;
+	grid-area: aspect_details;
+	font-family: "Sofia Sans Condensed", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	padding: 2px;
 }

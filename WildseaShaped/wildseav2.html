@@ -569,7 +569,9 @@
 			</div>
 			<fieldset class="repeating_aspects">
 				<div class="aspect_container">
-					<div class="aspect_name_label" data-i18n="name">Name</div>
+					<button class="aspect_name_label" type="roll" name="roll_aspect_info" value="&{template:aspect} {{name=@{aspect_name}}} {{length=@{aspect_length}}} {{desc=@{aspect_details_input}}}">
+						<div class="aspect_name_label" data-i18n="name">Name</div>
+					</button>
 					<input type="text" name="attr_aspect_name" class="aspect_name_input" spellcheck="false">
 					<select name="attr_aspect_source" class="aspect_source">
 						<option value="trait" data-i18n="trait">Trait</option>
@@ -636,7 +638,9 @@
 			</div>
 			<fieldset class="repeating_temp-aspects">
 				<div class="aspect_container">
-					<div class="aspect_name_label" data-i18n="name">Name</div>
+					<button class="aspect_name_label" type="roll" name="roll_aspect_info" value="&{template:aspect} {{name=@{temp_aspect_name}}} {{length=@{temp_aspect_length}}} {{desc=@{temp_aspect_details_input}}}">
+						<div class="aspect_name_label" data-i18n="name">Name</div>
+					</button>
 					<input type="text" name="attr_temp_aspect_name" class="aspect_name_input" spellcheck="false">
 					<select name="attr_temp_aspect_source" class="aspect_source">
 						<option value="benefit" data-i18n="benefit">Benefit</option>
@@ -988,7 +992,9 @@
 			</div>
 			<fieldset class="repeating_crew">
 				<div class="aspect_container">
-					<div class="aspect_name_label" data-i18n="name">Name</div>
+					<button class="aspect_name_label" type="roll" name="roll_aspect_info" value="&{template:aspect} {{name=@{crew_name}}} {{length=@{crew_length}}} {{desc=@{crew_details_input}}}">
+						<div class="aspect_name_label" data-i18n="name">Name</div>
+					</button>
 					<input type="text" name="attr_crew_name" class="aspect_name_input" spellcheck="false">
 					<select name="attr_crew_source" class="aspect_source">
 						<option value="officer" data-i18n="officer">Officer</option>
@@ -1081,6 +1087,11 @@
 		</div>
 	</div>
 </div>
+<rolltemplate class="sheet-rolltemplate-aspect">
+	<div class="sheet-template-aspect-name">{{name}}</div>
+	<div class="sheet-template-aspect-track-length">{{length}} Track</div>
+	{{#desc}}<div class="sheet-template-aspect-details">{{desc}}</div>{{/desc}}
+</rolltemplate>
 <script type="text/worker">
 	const parseValues = (values, stat, type='int') => {
 		if (type === 'int') return parseInt(values[stat])||0;
